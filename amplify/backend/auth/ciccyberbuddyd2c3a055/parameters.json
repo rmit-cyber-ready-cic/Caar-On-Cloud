@@ -1,0 +1,53 @@
+{
+    "identityPoolName": "ciccyberbuddy<sharedId>_identitypool_<sharedId>",
+    "allowUnauthenticatedIdentities": <boolean value>,
+    "resourceNameTruncated": "",
+    "userPoolName": "ciccyberbuddy<sharedId>_userpool_<sharedId>",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": <boolean value>,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientGenerateSecret": <boolean value>,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "userpoolClientLambdaRole": "ciccyb<sharedId>_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": <boolean value>,
+    "sharedId": "<sharedId>",
+    "resourceName": "ciccyberbuddy<sharedId>",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default",
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": <boolean value>,
+    "dependsOn": []
+}

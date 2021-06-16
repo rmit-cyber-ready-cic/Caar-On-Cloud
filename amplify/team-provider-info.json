@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "<StackName>-authRole",
+      "UnauthRoleArn": "arn:aws:iam::<account id>:role/<StackName>-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::<account id>:role/<StackName>-authRole",
+      "Region": "<region>",
+      "DeploymentBucketName": "<StackName>-deployment",
+      "UnauthRoleName": "<StackName>-unauthRole",
+      "StackName": "amplify-ciccyberbuddy-dev-233205",
+      "StackId": "arn:aws:cloudformation:<region>:<account id>:stack/<StackName>/c941b1c0-b4b8-11eb-a0a7-0a6641xxxxxx",
+      "AmplifyAppId": "<Unique App ID>"
+    },
+    "categories": {
+      "auth": {
+        "ciccyberbuddy<shareid>": {}
+      },
+      "interactions": {
+        "cyberBuddyBot": {
+          "deploymentBucketName": "<StackName>-deployment",
+          "s3Key": "amplify-builds/cyberBuddyBot-<enter value>-build.zip"
+        }
+      }
+    }
+  }
+}

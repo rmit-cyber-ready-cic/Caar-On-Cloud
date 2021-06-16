@@ -1,0 +1,63 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "<StackName>-authRole",
+      "UnauthRoleArn": "arn:aws:iam::<account id>:role/<StackName>-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::<account id>:role/<StackName>-authRole",
+      "Region": "<region>",
+      "DeploymentBucketName": "<StackName>-deployment",
+      "UnauthRoleName": "<StackName>-unauthRole",
+      "StackName": "<StackName>",
+      "StackId": "arn:aws:cloudformation:<region>:<account id>:stack/<StackName>/c941b1c0-b4b8-11eb-a0a7-0a6641xxxxxx",
+      "AmplifyAppId": "<App id>",
+      "AuthTriggerTemplateURL": ""
+    }
+  },
+  "auth": {
+    "ciccyberbuddy<share id>": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": <boolean value>,
+      "providerMetadata": {
+        "s3TemplateURL": "<s3 URL>",
+        "logicalId": "<local id>"
+      },
+      "lastPushTimeStamp": "2021-05-17T10:51:32.421Z",
+      "output": {
+        "UserPoolId": "<User Pool ID>",
+        "AppClientIDWeb": "<Web id>",
+        "AppClientID": "<Client ID>",
+        "IdentityPoolId": "<region>:<pool id>",
+        "UserPoolArn": "arn:aws:cognito-idp:<region>:<account id>:userpool/<User Pool ID>",
+        "IdentityPoolName": "<UserPoolName>__dev",
+        "UserPoolName": "<UserPoolName>"
+      },
+      "lastPushDirHash": "<hash value>"
+    }
+  },
+  "interactions": {
+    "cyberBuddyBot": {
+      "service": "Lex",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "lastPackageTimeStamp": "2021-05-16T14:27:15.461Z",
+      "distZipFilename": "cyberBuddyBot-<enter value>-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "<StackName>-deployment",
+        "s3Key": "amplify-builds/cyberBuddyBot-<Enter value>-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "<s3 URL>",
+        "logicalId": "interactionscyberBuddyBot"
+      },
+      "lastPushTimeStamp": "2021-05-17T10:51:32.422Z",
+      "output": {
+        "FunctionArn": "arn:aws:lambda:<region>:<account id>:function:ciccyberbuddy_cfnlambda_5d83exxx-dev",
+        "Region": "<region>",
+        "BotName": "OrderFlowers_dev"
+      },
+      "lastPushDirHash": "<hash value>"
+    }
+  }
+}

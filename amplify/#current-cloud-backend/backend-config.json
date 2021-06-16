@@ -1,0 +1,17 @@
+{
+  "auth": {
+    "ciccyberbuddy<sharedId>": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "interactions": {
+    "cyberBuddyBot": {
+      "service": "Lex",
+      "providerPlugin": "awscloudformation",
+      "build": true
+    }
+  }
+}
